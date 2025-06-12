@@ -15,7 +15,7 @@ const SplashScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Splash Screen </Text>
+      <Text style={styles.text}>Splash Screen</Text>
     </View>
   );
 };
