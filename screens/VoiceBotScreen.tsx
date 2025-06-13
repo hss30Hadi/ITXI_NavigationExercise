@@ -1,20 +1,15 @@
-import React from "react";
-import { View, Text, Button, StyleSheet } from "react-native";
+import React from 'react';
+import { View, Text, StyleSheet } from "react-native";
 
-export const EnterCompanyIDScreen = ({navigation}: any) => {
+export const VoiceBotScreen = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Enter Company ID Screen</Text>
-      <Button
-        title="Continue"
-        onPress={() => navigation.navigate('PickVoice')}
-        color={"#000"}
-     />
+      <Text style={styles.text}>Voice Bot Screen</Text>
     </View>
   );
 };
 
-export default EnterCompanyIDScreen;
+export default VoiceBotScreen;
 
 const styles = StyleSheet.create({
   container: {
@@ -25,9 +20,9 @@ const styles = StyleSheet.create({
   },
     text: {
         fontSize: 30,
+        fontWeight: 'bold',
         color: '#000',
         marginBottom: 20,
-        fontWeight: 'bold',
     },
     input: {
         height: 40,

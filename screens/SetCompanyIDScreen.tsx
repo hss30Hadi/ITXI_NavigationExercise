@@ -1,20 +1,20 @@
-import React from "react";
+import React from 'react';
 import { View, Text, Button, StyleSheet } from "react-native";
 
-export const EnterCompanyIDScreen = ({navigation}: any) => {
+export const SetCompanyIDScreen = ({navigation}: any) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Enter Company ID Screen</Text>
+      <Text style={styles.text}>Set Company ID Screen</Text>
       <Button
         title="Continue"
-        onPress={() => navigation.navigate('PickVoice')}
-        color={"#000"}
-     />
+        onPress={() => navigation.navigate('EnterCompanyId2')}
+        color="#000"
+      />
     </View>
   );
 };
 
-export default EnterCompanyIDScreen;
+export default SetCompanyIDScreen;
 
 const styles = StyleSheet.create({
   container: {

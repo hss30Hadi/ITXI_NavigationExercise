@@ -6,8 +6,10 @@ export const WelcomeScreen = ({navigation}:any) => {
     <View style={styles.container}>
       <Text style={styles.text}>Welcome Screen</Text>
       <Button
-      title="Get Started"
-      onPress={()=>navigation.navigate('EnterCompanyID')}/>
+        title="Get Started"
+      onPress={()=>navigation.navigate('EnterCompanyID')}
+      color="#000"/>
+
     </View>
   );
 };
@@ -20,7 +22,10 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
   },
     text: {
-        fontSize: 24,
+        fontSize: 30,
         color: "#000",
+        fontWeight: "bold",
+    marginBottom: 20, 
     },
+  
 });
