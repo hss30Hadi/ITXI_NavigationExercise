@@ -27,7 +27,7 @@ export default function App(){
       <Stack.Navigator initialRouteName="Splash">
           <Stack.Screen name="Splash" component={SplashScreen} options={{ headerShown: false }} />
           <Stack.Screen name="OnboardingStack" component={OnBoardingStack} options={{ headerShown: false }} />
-          <Stack.Screen name="VoiceBot" component={VoiceBotScreen} options={{ headerShown: false, presentation: 'transparentModal' }} />
+          <Stack.Screen name="VoiceBot" component={VoiceBotScreen} options={{ headerShown: true, presentation: 'transparentModal', title: 'Voice Bot' }} />
           <Stack.Screen name="MainScreen" component={MainScreen} options={{ headerShown: false,  presentation: 'transparentModal'  }} />
        <Stack.Screen name="SettingsStack" component={SettingsStack} options={{ headerShown: false }} />
       </Stack.Navigator>

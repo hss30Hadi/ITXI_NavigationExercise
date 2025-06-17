@@ -10,8 +10,8 @@ export default function OnBoardingStack() {
     return(
         <Stack.Navigator initialRouteName="Welcome">
             <Stack.Screen name="Welcome" component={WelcomeScreen} options={{ headerShown: false }} />
-            <Stack.Screen name="EnterCompanyID" component={EnterCompanyIDScreen} options={{ headerShown: false }} />
-            <Stack.Screen name="PickVoice" component={PickVoiceScreen} options={{ headerShown: false, presentation: 'modal' }} />
+            <Stack.Screen name="EnterCompanyID" component={EnterCompanyIDScreen} options={{ headerShown: true, title: 'Enter Company ID' }} />
+            <Stack.Screen name="PickVoice" component={PickVoiceScreen} options={{ headerShown: true, presentation: 'modal', title: 'Pick Voice' }} />
         </Stack.Navigator>
     );
 }
